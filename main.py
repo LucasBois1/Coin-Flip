@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 #Python 2.7
 
+from Tkinter import *
 import random
 
 def coin_flip(coin):
@@ -9,9 +10,8 @@ def coin_flip(coin):
     else:
         return 'Heads'
 
-def main():
-    flip_num = int(input('Enter the amount of coin flips: '))
-     
+def main(flip_num):
+
     final_result = {}
 
     for number in range(1,flip_num + 1):
@@ -22,8 +22,14 @@ def main():
             final_result[coin_flip(coin)] = final_result[coin_flip(coin)] +1
     heads = final_result.get('Heads')
     tails = final_result.get('Tails')
+
+    heads = int(heads)
+    tails = int(tails)
+
     headsPercentage = heads * 100 // flip_num
     tailsPercentage = tails * 100 // flip_num
     
-    print '\n    Results\n','-'*18,'\nHeads ==>', heads,'\nTails ==>', tails, '\n','-'*18
-    print 'Heads ==>', headsPercentage, '%\nTails ==>', tailsPercentage, '%', '\n','-'*18
+    return final_result,heads,tails,headsPercentage,tailsPercentage
+
+    #print '\n    Results\n','-'*18,'\nHeads ==>', heads,'\nTails ==>', tails, '\n','-'*18
+    #print 'Heads ==>', headsPercentage, '%\nTails ==>', tailsPercentage, '%', '\n','-'*18
