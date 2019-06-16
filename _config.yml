@@ -1,4 +1,5 @@
-theme: jekyll-theme-slate
-title: Coin Flip Sim
+theme: jekyll-theme-cayman
+title: Coin Flip
 show_downloads: true
 livereload: true
+lsi: true
