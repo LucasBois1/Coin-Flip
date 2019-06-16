@@ -1,3 +1,4 @@
 theme: jekyll-theme-cayman
-title: "Coin Flip"
-show_downloads: "true"
+title: CoinFlip
+show_downloads: true
+livereload: true
