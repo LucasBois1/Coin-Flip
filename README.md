@@ -1,6 +1,6 @@
 # Coin Flipping simulator
 
-![CoinFlip Logo](/images/logo.png)
+![CoinFlip Logo](/images/repository-banner-template.jpg)
 
 The program asks the user how many times he wants to simulate a coin tossing, and then shows the results on the console. The results of the program include percentage of heads, percentage of tails, the relationship between the percentages and finally which is higher. The software is full developed with Python 2.7 using Visual Studio Code as IDE. calculates perfectly up to one hundred million coin launches, although the larger the number of launches, the result tends to be 50% between heads and 50% tails.
 
